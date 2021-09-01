@@ -125,16 +125,6 @@ function ConvertHandler() {
   this.getString = function(initNum, initUnit, returnNum, returnUnit) {
     // example return string: 1 liters converts to 0.26417 gallons
 
-    /*
-    if (returnUnit == 'l') {
-      returnUnit = 'L';
-    }
-    let initStr = this.spellOutUnit(initUnit);
-    let returnStr = this.spellOutUnit(returnUnit)
-    // 'L' for liter unit (instead of 'l')
-    returnUnit = returnUnit == 'l' ? 'L' : returnUnit;
-    */
-
     return `${initNum} ${this.spellOutUnit(initUnit)} converts to ${returnNum} ${this.spellOutUnit(returnUnit)}`;
   };
   
